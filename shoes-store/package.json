@@ -1,5 +1,5 @@
 {
-  "homepage": "https://u31999.github.io/shoes-store",
+  "homepage": "https://u31999.github.io/shoes-store/",
   "name": "shoes-store",
   "version": "0.1.0",
   "private": true,
@@ -31,7 +31,7 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
+      ">0%",
       "not dead",
       "not op_mini all"
     ],

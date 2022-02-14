@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { shopingItemsArray } from '../ShopingCart';
 
+export const processPublicImage = (imageUrl) => {
+    return process.env.PUBLIC_URL + imageUrl;
+}
 
 const ShopPage = () => {
 
@@ -60,9 +63,11 @@ const ShopPage = () => {
                 allItems.map((item, i) => 
                     <div key={i} className={classes.itemContainer}>
                         <div className={classes.itemImage}
-                        onMouseEnter={(e) => changeImage(e, item.imageTwo)} 
-                        onMouseLeave={(e) => changeImage(e, item.imageOne)}>
-                        <img src={item.imageOne} alt=''/></div>
+                        onMouseEnter={(e) => changeImage(e, 
+                                        processPublicImage(item.imageTwo))} 
+                        onMouseLeave={(e) => changeImage(e,
+                                        processPublicImage(item.imageOne))}>
+                        <img src={processPublicImage(item.imageOne)} alt=''/></div>
                         <div className={classes.itemDetails} >
                             <div className={classes.prand}>{item.prand}</div>
                             <div className={classes.itemTitle}>{item["name"]}</div>

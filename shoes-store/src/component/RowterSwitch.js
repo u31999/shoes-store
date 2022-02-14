@@ -5,9 +5,8 @@ import ShopPage from "./pages/ShopPage";
 
 const RowterSwitch = () => {
     return(
-        
-            <Routes>
-                <Route path="/" element={<HomePage />} />
+        <Routes>
+                <Route path="/shoes-store" element={<HomePage />} />
                 <Route path="/shop" element={<ShopPage />} />
                 <Route path="/contact" element={<ContactPage />} />
             </Routes>

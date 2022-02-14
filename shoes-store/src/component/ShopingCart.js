@@ -1,5 +1,7 @@
 import classes from '../res/layout/shopingcart.module.scss';
 import { useState, useEffect } from 'react';
+import { processPublicImage } from './pages/ShopPage';
+
 export let shopingItemsArray =[];
 
 const theTotal = (allItem) => {
@@ -63,7 +65,7 @@ const Items = (props) => {
         {items.map((item,i) => 
         <div key={i} className={classes.oneItemContainer}>
             <div className={classes.imageDiv}>
-                <img src={item.imageOne} alt='item-img' />
+                <img src={processPublicImage(item.imageOne)} alt='item-img' />
             </div>
             <div className={classes.oneItemDetails}>
                 <div className={classes.itemName}>{item.name.slice(0, 15) + '...'}</div>

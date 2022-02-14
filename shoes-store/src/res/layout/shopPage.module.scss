@@ -89,10 +89,16 @@
 @media only screen and (max-width: $breakpoint-iphone-XR) {
 	.shopBody {
 		grid-template-columns: auto auto;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 @media only screen and (max-width: $breakpoint-galaxyFold) {
 	.shopBody {
 		grid-template-columns: auto;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
