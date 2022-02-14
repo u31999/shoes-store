@@ -7,6 +7,7 @@ const RowterSwitch = () => {
     return(
         <Routes>
                 <Route path="/shoes-store" element={<HomePage />} />
+                <Route path="/" element={<HomePage />} />
                 <Route path="/shop" element={<ShopPage />} />
                 <Route path="/contact" element={<ContactPage />} />
             </Routes>
