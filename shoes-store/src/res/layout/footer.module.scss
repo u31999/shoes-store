@@ -1,0 +1,28 @@
+@import "root";
+
+.footerContainer {
+	position: fixed;
+	bottom: 2px;
+	width: 100%;
+	margin: auto;
+	div:first-child {
+		font-size: 10px;
+		align-items: center;
+		justify-content: center;
+		color: $blueDarkColor;
+	}
+	div:last-child {
+		display: flex;
+		gap: 5px;
+		align-items: center;
+		justify-content: center;
+	}
+	div:last-child * {
+		color: $blueDarkColor;
+		font-size: 20px;
+	}
+	div:last-child div:hover * {
+		cursor: pointer;
+		color: orange;
+	}
+}

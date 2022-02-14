@@ -1,0 +1,70 @@
+@import "root";
+
+.headerContainer {
+	display: flex;
+	align-items: center;
+	background-color: black;
+
+	.logo {
+		flex: 1;
+		color: $logoColor;
+		text-shadow: black 4px 3px 2px;
+	}
+	.nav {
+		flex: 1;
+		display: flex;
+
+		a {
+			flex: 1;
+			text-decoration: none;
+			font-weight: 600;
+			text-shadow: black 2px 2px 2px;
+			color: $backgroundColor;
+		}
+		a:hover {
+			color: $yellowColor;
+		}
+		.active {
+			color: $logoColor;
+		}
+		div {
+			flex: 1;
+			color: white;
+			display: flex;
+			svg {
+				font-size: 20px;
+			}
+			svg:hover {
+				cursor: pointer;
+				color: $logoColor;
+			}
+			span {
+				position: relative;
+				font-size: 15px;
+				text-align: center;
+				align-items: center;
+				justify-content: center;
+				background-color: $purpleColor;
+				border-radius: 50%;
+				width: 20px;
+				height: 20px;
+				opacity: 0;
+			}
+		}
+	}
+}
+
+//mediaQuery
+@media only screen and (max-width: $breakpoint-iphone-XR) {
+	.headerContainer {
+		flex-direction: column;
+		.nav {
+			margin-bottom: 10px;
+			justify-content: space-evenly;
+			width: 100%;
+			div {
+				flex: 0.5;
+			}
+		}
+	}
+}

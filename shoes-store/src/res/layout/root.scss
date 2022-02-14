@@ -1,0 +1,59 @@
+$backgroundColor: #d9d9d9;
+$blueDarkColor: #0a182a;
+$logoColor: rgb(70, 255, 211);
+$yellowColor: #f9d342;
+$purpleColor: #50337e;
+
+//mediaQuery breakpoint
+$breakpoint-iphone-SE: 375px;
+$breakpoint-iphone-XR: 414px;
+$breakpoint-iphone-12PRO: 390px;
+$breakpoint-iphone-Pixel5: 393px;
+$breakpoint-iphone-S8: 360px;
+$breakpoint-ipad-Air: 820px;
+$breakpoint-ipad-Mini: 768px;
+$breakpoint-surfacePro: 912px;
+$breakpoint-surfaceDuo: 540px;
+$breakpoint-galaxyFold: 280px;
+
+//keyFrames
+$cubicEaseInOut: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+$cubicEaseIn: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+$cubicEaseOut: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+$cubicLiner: cubic-bezier(0.57, 0.57, 0.72, 0.72);
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 0.25;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.75;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes moveVertically {
+	0% {
+		transform: translateX(-100%);
+	}
+	25% {
+		transform: translateX(-75%);
+	}
+	50% {
+		transform: translateX(-50%);
+	}
+	75% {
+		transform: translateX(-25%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}

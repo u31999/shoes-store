@@ -1,0 +1,98 @@
+@import "root";
+
+.shopBody {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	grid-gap: 20px;
+	animation: fadeInOpacity 6\00ms $cubicLiner;
+
+	.itemContainer {
+		margin: 0px auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: white;
+		flex-direction: column;
+		border-radius: 10px;
+		border: 1px solid $blueDarkColor;
+
+		.itemImage {
+			padding: 1rem;
+			flex: 1;
+			img {
+				width: 115px;
+				height: 65px;
+				background-color: #d9d9d9;
+				vertical-align: middle;
+			}
+		}
+		.itemImage:hover {
+			cursor: pointer;
+		}
+		.itemDetails {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding-bottom: 10px;
+			gap: 2px;
+
+			.prand {
+				font-weight: 900;
+				color: $purpleColor;
+				text-shadow: black 1px 1px 1px;
+			}
+			.itemTitle {
+				width: 90%;
+				margin: auto;
+				font-size: 15px;
+			}
+
+			.itemPrice {
+				background-color: $purpleColor;
+				color: orange;
+				text-shadow: black 1px 1px 1px;
+				margin-bottom: 3px;
+				margin-top: 3px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			button {
+				width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+				border-radius: 5px;
+				display: flex;
+				background-color: black;
+				border: none;
+				color: white;
+				justify-content: space-around;
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+			button:hover {
+				background-color: $purpleColor;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+//mediaQuerys
+@media only screen and (max-width: $breakpoint-iphone-XR) {
+	.shopBody {
+		grid-template-columns: auto auto;
+	}
+}
+@media only screen and (max-width: $breakpoint-galaxyFold) {
+	.shopBody {
+		grid-template-columns: auto;
+	}
+}
